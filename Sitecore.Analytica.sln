@@ -9,6 +9,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sitecore.Analytica.Channeli
 EndProject
 Project("{CAA73BB0-EF22-4D79-A57E-DF67B3BA9C80}") = "Sitecore.Analytica.Channelizer.Master", "src\Channelizer\tds\Sitecore.Analytica.Channelizer.Master\Sitecore.Analytica.Channelizer.Master.scproj", "{9A08BD1E-E6F0-4CCB-8930-65C171AED9AC}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{A59E4B91-576F-491A-84E9-673BF83DD60F}"
+	ProjectSection(SolutionItems) = preProject
+		readme.md = readme.md
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
