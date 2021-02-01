@@ -11,6 +11,6 @@
    1. **Referring Domain**: Enter the domain name of the referring site from where user lands on this Sitecore website
    2. **Channel**: Select an appropriate channel to associate with this rule
    3. **Query parameters**: Enter as many query parameters as you want, to process during this rule evaluation, which are available in the request URL
-   4. **Priority**: Select priority which decide whether only referring domain to check, only query paramters to check or both referring domain and query parameters to check during rule evaluation
+   4. **Priority**: Select priority which decide whether only referring domain to check, only query paramters to check or both referring domain and query parameters to check during rule evaluation. If Priority value is not selected, the by default it will use the **Both** option to check for both referring domain and incoming query parameters.
 6. Publish all the items created and modified.
 8. If you have CD servers, then download the package and install on each CD server.
