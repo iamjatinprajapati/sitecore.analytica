@@ -1,0 +1,44 @@
+----item----
+version: 1
+id: {B0ADABC6-F50F-4493-B6F0-9B2010C579FD}
+database: master
+path: /sitecore/templates/Analytica/Channelizer/Channelizer Settings/Channelizer
+parent: {60582208-D945-4E97-BAB6-37A947231770}
+name: Channelizer
+master: {00000000-0000-0000-0000-000000000000}
+template: {E269FBB5-3750-427A-9149-7AA950B49301}
+templatekey: Template section
+
+----version----
+language: en
+version: 1
+revision: 9f704214-b66c-47b1-a3dc-5116f4b5528a
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20210109T160327Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+9f704214-b66c-47b1-a3dc-5116f4b5528a
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20210109T160327Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
