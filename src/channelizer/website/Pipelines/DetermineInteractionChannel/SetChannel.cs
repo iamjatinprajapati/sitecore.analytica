@@ -51,9 +51,9 @@ namespace Sitecore.Analytica.Channelizer.Pipelines.DetermineInteractionChannel
                         break;
                     }
                 }
-                else if (priority.Equals(Constants.CHANNELIZER_PRIORITY_DOMAIN))
+                else if (priority.Equals(Constants.CHANNELIZER_PRIORITY_DOMAIN) && !String.IsNullOrEmpty(referringDomain))
                 {
-                    if (MatchesReferrerDomain(referringDomain))
+                    if (MatchesReferrerDomain(referringDomain.ToLowerInvariant()))
                     {
                         args.ChannelId = channelItem.ID;
                         break;
@@ -77,13 +77,13 @@ namespace Sitecore.Analytica.Channelizer.Pipelines.DetermineInteractionChannel
         /// <returns>True or False</returns>
         private bool MatchesQueryParameters(NameValueCollection queryParameters)
         {
-            var urlParameters = Sitecore.Web.WebUtil.ParseUrlParameters(HttpContext.Current.Request.Url.ToString());
+            var urlParameters = Sitecore.Web.WebUtil.ParseUrlParameters(HttpContext.Current.Request.Url.ToString().ToLowerInvariant());
             if(urlParameters != null && urlParameters.Count > 0)
             {
                 bool matches = true;
                 foreach(var key in urlParameters.AllKeys)
                 {
-                    if(queryParameters[key] != urlParameters[key])
+                    if(queryParameters[key].ToLowerInvariant() != urlParameters[key].ToLowerInvariant())
                     {
                         matches = false;
                     }
