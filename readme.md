@@ -14,3 +14,4 @@
    4. **Priority**: Select priority which decide whether only referring domain to check, only query paramters to check or both referring domain and query parameters to check during rule evaluation. If Priority value is not selected, the by default it will use the **Both** option to check for both referring domain and incoming query parameters.
 6. Publish all the items created and modified.
 8. If you have CD servers, then download the package and install on each CD server.
+9. All the rules are evaluated one by one and the first matching rule wins and associated channel is set to the interaction. Rest other rules are skipped.
