@@ -18,6 +18,8 @@ namespace Sitecore.Analytica.Channelizer.Pipelines.DetermineInteractionChannel
                 return;
             }
 
+            bool channelSet = false;
+
             /**
              * Process all settings item for diffenet domain and query parameters.
              * If the match found and the channel id has been set, then exit and stop processing other items
@@ -45,9 +47,10 @@ namespace Sitecore.Analytica.Channelizer.Pipelines.DetermineInteractionChannel
                 }
                 if (priority.Equals(Constants.CHANNELIZER_PRIORITY_BOTH))
                 {
-                    if (MatchesReferrerDomain(referringDomain) && MatchesQueryParameters(queryParametersList))
+                    if (MatchesReferrerDomain(referringDomain.ToLowerInvariant()) && MatchesQueryParameters(queryParametersList))
                     {
                         args.ChannelId = channelItem.ID;
+                        channelSet = true;
                         break;
                     }
                 }
@@ -56,6 +59,7 @@ namespace Sitecore.Analytica.Channelizer.Pipelines.DetermineInteractionChannel
                     if (MatchesReferrerDomain(referringDomain.ToLowerInvariant()))
                     {
                         args.ChannelId = channelItem.ID;
+                        channelSet = true;
                         break;
                     }
                 }
@@ -64,7 +68,22 @@ namespace Sitecore.Analytica.Channelizer.Pipelines.DetermineInteractionChannel
                     if (MatchesQueryParameters(queryParametersList))
                     {
                         args.ChannelId = channelItem.ID;
+                        channelSet = true;
                         break;
+                    }
+                }
+            }
+
+            if (!channelSet && HttpContext.Current.Request.UrlReferrer != null)
+            {
+                //Set the other referrals channel
+                string channelId = this.channelizerSettingsItem[Templates.ChannelizerSettings.Fields.OtherReferralsChannel];
+                if (!String.IsNullOrEmpty(channelId))
+                {
+                    var channleItem = Sitecore.Context.Database.GetItem(channelId);
+                    if (channleItem != null && channleItem.DescendsFrom(Templates.ChannelTemplateId))
+                    {
+                        args.ChannelId = channleItem.ID;
                     }
                 }
             }

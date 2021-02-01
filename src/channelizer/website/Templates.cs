@@ -8,6 +8,8 @@ namespace Sitecore.Analytica.Channelizer
 {
     public struct Templates
     {
+        public static readonly ID ChannelTemplateId = ID.Parse("{3B4FDE65-16A8-491D-BF15-99CE83CF3506}");
+
         public struct ChannelizerSettings
         {
             public static readonly ID TemplateId = ID.Parse("{60582208-D945-4E97-BAB6-37A947231770}");
@@ -16,6 +18,7 @@ namespace Sitecore.Analytica.Channelizer
             {
                 public static readonly ID Active = ID.Parse("{6C6DC4DF-8175-462F-BA65-A2FB1729401B}");
                 public static readonly ID DoNotProcessIfChannelsAlreadyAssigned = ID.Parse("{457F6746-E332-472D-83D2-3DC4C9CDE370}");
+                public static readonly ID OtherReferralsChannel = ID.Parse("{F59884FC-C73B-4BC7-BF64-1A6CCE32401C}");
             }
         }
 
