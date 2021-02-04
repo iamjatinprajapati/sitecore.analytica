@@ -96,6 +96,10 @@ namespace Sitecore.Analytica.Channelizer.Pipelines.DetermineInteractionChannel
         /// <returns>True or False</returns>
         private bool MatchesQueryParameters(NameValueCollection queryParameters)
         {
+            if (String.IsNullOrEmpty(HttpContext.Current.Request.Url.Query))
+            {
+                return false;
+            }
             var urlParameters = Sitecore.Web.WebUtil.ParseUrlParameters(HttpContext.Current.Request.Url.ToString().ToLowerInvariant());
             if(urlParameters != null && urlParameters.Count > 0)
             {
