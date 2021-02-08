@@ -1,10 +1,10 @@
 ----item----
 version: 1
-id: {8DD723A3-CB78-4EE1-8046-0517386E1437}
+id: {C6283554-11EB-4BE9-95DC-7ACED17AEB57}
 database: master
-path: /sitecore/templates/Analytica/Channelizer/Channelizer Setting Item/Setting/priority
+path: /sitecore/templates/Analytica/Channelizer/Channelizer Setting Rule/Setting/queryparameters
 parent: {2648067D-8AB8-4C4B-8139-F167FE01556B}
-name: priority
+name: queryparameters
 master: {00000000-0000-0000-0000-000000000000}
 template: {455A3E98-A627-4B40-8035-E683A0331AC7}
 templatekey: Template field
@@ -13,16 +13,9 @@ templatekey: Template field
 field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
 name: Type
 key: type
-content-length: 8
+content-length: 15
 
-Droplist
-----field----
-field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
-name: Source
-key: source
-content-length: 65
-
-/sitecore/system/Modules/Channelizer/Channelizer Priority Options
+Name Value List
 ----field----
 field: {BE351A73-FCB0-4213-93FA-C302D8AB4F51}
 name: Shared
@@ -31,87 +24,80 @@ content-length: 1
 
 1
 ----field----
-field: {B118496A-0F78-4A27-B55F-0A6C4B0B0FE1}
-name: Default value
-key: default value
-content-length: 4
-
-Both
-----field----
 field: {337E20E1-999A-4EEA-85AD-B58A03AE75CC}
 name: Quick Action Bar
 key: quick action bar
-content-length: 38
+content-length: 0
 
-{59D4EE10-627C-4FD3-A964-61A88B092CBC}
+
 ----field----
 field: {21828437-EA4B-40A1-8C61-4CE60EA41DB6}
 name: Validate Button
 key: validate button
-content-length: 38
+content-length: 0
 
-{59D4EE10-627C-4FD3-A964-61A88B092CBC}
+
 ----field----
 field: {9C903E29-650D-4AF2-B9BD-526D5C14A1A5}
 name: Validator Bar
 key: validator bar
-content-length: 38
+content-length: 0
 
-{59D4EE10-627C-4FD3-A964-61A88B092CBC}
+
 ----field----
 field: {53C432C4-7122-4E2D-8296-DB4184FD1735}
 name: Workflow
 key: workflow
-content-length: 38
+content-length: 0
 
-{59D4EE10-627C-4FD3-A964-61A88B092CBC}
+
 ----field----
 field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
 name: __Sortorder
 key: __sortorder
 content-length: 3
 
-400
+300
 ----version----
 language: en
 version: 1
-revision: 6ee51bab-4bbf-48f2-97b3-2572b24a465f
+revision: a9ae92ee-ac2d-4de6-8bd9-39fdd5b7fc94
 
 ----field----
 field: {19A69332-A23E-4E70-8D16-B2640CB24CC8}
 name: Title
 key: title
-content-length: 8
+content-length: 16
 
-Priority
+Query parameters
 ----field----
 field: {B5E02AD9-D56F-4C41-A065-A133DB87BDEB}
 name: __Display name
 key: __display name
-content-length: 8
+content-length: 16
 
-Priority
+Query parameters
 ----field----
 field: {25BED78C-4957-4165-998A-CA1B52F67497}
 name: __Created
 key: __created
 content-length: 16
 
-20210110T151028Z
+20210110T150836Z
 ----field----
 field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
 name: __Revision
 key: __revision
 content-length: 36
 
-6ee51bab-4bbf-48f2-97b3-2572b24a465f
+a9ae92ee-ac2d-4de6-8bd9-39fdd5b7fc94
 ----field----
 field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
 name: __Updated
 key: __updated
 content-length: 16
 
-20210129T041729Z
+20210207T155849Z
 ----field----
 field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
 name: __Updated by

@@ -32,6 +32,7 @@ namespace Sitecore.Analytica.Channelizer
                 public static readonly ID Channel = ID.Parse("{D54B74DB-8F98-463F-87C6-6898D81701CB}");
                 public static readonly ID QueryParameters = ID.Parse("{C6283554-11EB-4BE9-95DC-7ACED17AEB57}");
                 public static readonly ID Priority = ID.Parse("{8DD723A3-CB78-4EE1-8046-0517386E1437}");
+                public static readonly ID OnlyCheckQueryParametersPresence = ID.Parse("{110BD73E-A3E7-4A25-8101-EC7809352D07}");
             }
         }
 

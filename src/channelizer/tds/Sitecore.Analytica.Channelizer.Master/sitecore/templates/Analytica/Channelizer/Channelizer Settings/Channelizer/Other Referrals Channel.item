@@ -1,0 +1,72 @@
+----item----
+version: 1
+id: {F59884FC-C73B-4BC7-BF64-1A6CCE32401C}
+database: master
+path: /sitecore/templates/Analytica/Channelizer/Channelizer Settings/Channelizer/Other Referrals Channel
+parent: {B0ADABC6-F50F-4493-B6F0-9B2010C579FD}
+name: Other Referrals Channel
+master: {00000000-0000-0000-0000-000000000000}
+template: {455A3E98-A627-4B40-8035-E683A0331AC7}
+templatekey: Template field
+
+----field----
+field: {AB162CC0-DC80-4ABF-8871-998EE5D7BA32}
+name: Type
+key: type
+content-length: 8
+
+Droptree
+----field----
+field: {1EB8AE32-E190-44A6-968D-ED904C794EBF}
+name: Source
+key: source
+content-length: 59
+
+/sitecore/system/Marketing Control Panel/Taxonomies/Channel
+----field----
+field: {BE351A73-FCB0-4213-93FA-C302D8AB4F51}
+name: Shared
+key: shared
+content-length: 1
+
+1
+----field----
+field: {BA3F86A2-4A1C-4D78-B63D-91C2779C1B5E}
+name: __Sortorder
+key: __sortorder
+content-length: 3
+
+300
+----version----
+language: en
+version: 1
+revision: e29bf8f2-3aca-4dcd-8f05-9154bde6eec8
+
+----field----
+field: {25BED78C-4957-4165-998A-CA1B52F67497}
+name: __Created
+key: __created
+content-length: 16
+
+20210201T151127Z
+----field----
+field: {8CDC337E-A112-42FB-BBB4-4143751E123F}
+name: __Revision
+key: __revision
+content-length: 36
+
+e29bf8f2-3aca-4dcd-8f05-9154bde6eec8
+----field----
+field: {D9CF14B1-FA16-4BA6-9288-E8A174D4D522}
+name: __Updated
+key: __updated
+content-length: 16
+
+20210201T151257Z
+----field----
+field: {BADD9CF9-53E0-4D0C-BCC0-2D784C282F6A}
+name: __Updated by
+key: __updated by
+content-length: 14
+
+sitecore\Admin
