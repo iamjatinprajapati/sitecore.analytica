@@ -84,6 +84,7 @@ namespace Sitecore.Analytica.Channelizer.Pipelines.DetermineInteractionChannel
 
             if (!channelSet && HttpContext.Current.Request.UrlReferrer != null)
             {
+                Sitecore.Diagnostics.Log.Debug($"{typeof(SetChannel).FullName} - channel not set by custom rules, and request has url referrer so setting the common referral channel from settings.", this);
                 //Set the other referrals channel
                 string channelId = this.channelizerSettingsItem[Templates.ChannelizerSettings.Fields.OtherReferralsChannel];
                 if (!String.IsNullOrEmpty(channelId))
